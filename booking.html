@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="wrapper"> <!-- Начало блока всего контента -->
+    <header class="main-header"> <!-- Начало шапки сайта -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и Видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <section class="logo">
+      	<a href="#"><img src="img/" width="" height="" alt="Логотип"></a>
+      </section>
+    </header> <!-- Конец шапки сайта -->
+
+    <section class="content"> <!-- Начало контента -->
+
+      <div class="filter"> <!-- Начало блока фильтра -->
+
+        <section class="filter-infrastructure">
+          <label>
+            <input type="checkbox" name="infrastructure" value="pool" checked>
+            <p>Бассейн</p>
+          </label>
+          <label>
+            <input type="checkbox" name="infrastructure" value="parking">
+            <p>Парковка</p>
+          </label>
+          <label>
+            <input type="checkbox" name="infrastructure" value="wi-fi">
+            <p>WI-FI</p>
+          </label>
+        </section>
+
+        <section class="filter-type-house">
+          <label>
+            <input type="checkbox" name="type-house" value="hotel" checked>
+            <p>Гостиница</p>
+          </label>
+          <label>
+            <input type="checkbox" name="type-house" value="motel" checked>
+            <p>Мотель</p>
+          </label>
+          <label>
+            <input type="checkbox" name="type-house" value="apartments" checked>
+            <p>Апартаменты</p>
+          </label>
+        </section>
+
+        <section class="filter-rang">
+          <p>Стоимость в сутки (р):</p>
+          <!--Здесь будет rang -->
+          <label>
+            <button type="button" value="" name="Показать"></button>            
+          </label>
+        </section>        
+      </div> <!-- Конец блока фильтров -->
+
+      <section class="sort">
+        <div class="sort-find">
+          <p>Найдено:</p>
+        </div>
+        <section class="sort-items">
+          <p>Сортировка:</p>
+          <ul>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+        </section>
+        <div class="sort-order">
+          <a class="acs" href=""><img src="img/" width="" height=""></a>
+          <a class="decs" href=""><img src="img/" width="" height=""></a>
+        </div>
+      </section>
+
+      <section class="results"> <!-- Начало блока вывода результатов поиска -->
+        <article class="item"> <!-- Начало блока вывода 1го результа -->
+          
+          <div class="item-info"> <!-- Начало блока рис. + подробности -->
+            <div class="item-picture pic1">
+            </div>
+            <div class="item-describes">
+              <h2>Amara Resort & Spa</h2>
+              <div class="item-details">
+                <span class="item-type-house">Гостиница</span>
+                <span class="item-price">от 3500 р.</span>
+              </div>
+              <div class="item-btn-wrapper">
+                <a class="item-btn details" href="#">Подробности</a>
+                <a class="item-btn booking" href="#">Забронировать</a>
+              </div>
+            </div>
+          </div> <!-- Конец блока рис. + подробности -->
+
+            <section class="item-rating"> <!-- Начало блока рейтинг -->
+              <div class="rating-star4">
+              </div>
+              <div class="rating-star">
+                <p>Рейтинг: 8,5</p>
+              </div>
+            </section> <!-- Конец блока рейтинг -->          
+        </article> <!-- Конец блока вывода 1го результа -->
+
+        <article class="item"> <!-- Начало блока вывода 2го результа -->
+          
+          <div class="item-info"> <!-- Начало блока рис. + подробности -->
+            <div class="item-picture pic2">
+            </div>
+            <div class="item-describes">
+              <h2>Desert Quail inn</h2>
+              <div class="item-details">
+                <span class="item-type-house">Мотель</span>
+                <span class="item-price">от 2000 р.</span>
+              </div>
+              <div class="item-btn-wrapper">
+                <a class="item-btn details" href="#">Подробности</a>
+                <a class="item-btn booking" href="#">Забронировать</a>
+              </div>
+            </div>
+          </div> <!-- Конец блока рис. + подробности -->
+
+            <section class="item-rating"> <!-- Начало блока рейтинг -->
+              <div class="rating-star2">
+              </div>
+              <div class="rating-star">
+                <p>Рейтинг: 8,9</p>
+              </div>
+            </section> <!-- Конец блока рейтинг -->          
+        </article> <!-- Конец блока вывода 2го результа -->
+
+        <article class="item"> <!-- Начало блока вывода 3го результа -->
+          
+          <div class="item-info"> <!-- Начало блока рис. + подробности -->
+            <div class="item-picture pic3">
+            </div>
+            <div class="item-describes">
+              <h2>Villas At Poco Diablo</h2>
+              <div class="item-details">
+                <span class="item-type-house">Апартаменты</span>
+                <span class="item-price">от 4000 р.</span>
+              </div>
+              <div class="item-btn-wrapper">
+                <a class="item-btn details" href="#">Подробности</a>
+                <a class="item-btn booking" href="#">Забронировать</a>
+              </div>
+            </div>
+          </div> <!-- Конец блока рис. + подробности -->
+
+            <section class="item-rating"> <!-- Начало блока рейтинг -->
+              <div class="rating-star3">
+              </div>
+              <div class="rating-star">
+                <p>Рейтинг: 9,2</p>
+              </div>
+            </section> <!-- Конец блока рейтинг -->          
+        </article> <!-- Конец блока вывода 2го результа -->
+
+      </section> <!-- Конец блока вывода результатов поиска -->
+
+    </section> <!-- Конец контента -->
+
+    <footer class="main-footer">
+    	<section class="footer-hashtag">
+    	  <a href="#" title="#"><span>#VIZITSEDONA</span></a>
+    	</section>
+
+    	<section class="footer-social">
+    	  <a class="social-btn social-btn-tw" href="#">Твит</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-yt" href="#">Ютюб</a>
+    	</section>
+
+    	<section class="footer-copyright">
+    	  <p>Website by</p>
+    	  <a href="#" title="Сайт разработчика"><img src="#" width="" height=""></a>
+    	</section>
+    </footer>
+    </div> <!-- Конец блока всего контента -->
+  </body>
+</html>

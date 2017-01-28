@@ -25,32 +25,34 @@
       <div class="filter"> <!-- Начало блока фильтра -->
 
         <section class="filter-infrastructure">
+          <h4>Инфраструктура:</h4>
           <label>
             <input type="checkbox" name="infrastructure" value="pool" checked>
-            <p>Бассейн</p>
+            <span>Бассейн</span>
           </label>
           <label>
             <input type="checkbox" name="infrastructure" value="parking">
-            <p>Парковка</p>
+            <span>Парковка</span>
           </label>
           <label>
             <input type="checkbox" name="infrastructure" value="wi-fi">
-            <p>WI-FI</p>
+            <span>WI-FI</span>
           </label>
         </section>
 
         <section class="filter-type-house">
+          <h4>Тип жилья:</h4>
           <label>
             <input type="checkbox" name="type-house" value="hotel" checked>
-            <p>Гостиница</p>
+            <span>Гостиница</span>
           </label>
           <label>
             <input type="checkbox" name="type-house" value="motel" checked>
-            <p>Мотель</p>
+            <span>Мотель</span>
           </label>
           <label>
             <input type="checkbox" name="type-house" value="apartments" checked>
-            <p>Апартаменты</p>
+            <span>Апартаменты</span>
           </label>
         </section>
 
@@ -76,8 +78,8 @@
           </ul>
         </section>
         <div class="sort-order">
-          <a class="acs" href=""><img src="img/" width="" height=""></a>
-          <a class="decs" href=""><img src="img/" width="" height=""></a>
+          <a class="order acs" href=""></a>
+          <a class="order decs" href=""></a>
         </div>
       </section>
 
@@ -85,7 +87,8 @@
         <article class="item"> <!-- Начало блока вывода 1го результа -->
           
           <div class="item-info"> <!-- Начало блока рис. + подробности -->
-            <div class="item-picture pic1">
+            <div class="item-picture">
+              <img src="img/" alt="Amara Resort & Spa" width="" height="">
             </div>
             <div class="item-describes">
               <h2>Amara Resort & Spa</h2>
@@ -101,9 +104,13 @@
           </div> <!-- Конец блока рис. + подробности -->
 
             <section class="item-rating"> <!-- Начало блока рейтинг -->
-              <div class="rating-star4">
+              <div class="rating-star-wrapper"> 
+                <span class="rating-star"></span> 
+                <span class="rating-star"></span> 
+                <span class="rating-star"></span> 
+                <span class="rating-star"></span> 
               </div>
-              <div class="rating-star">
+              <div class="rating-result">
                 <p>Рейтинг: 8,5</p>
               </div>
             </section> <!-- Конец блока рейтинг -->          
@@ -112,7 +119,8 @@
         <article class="item"> <!-- Начало блока вывода 2го результа -->
           
           <div class="item-info"> <!-- Начало блока рис. + подробности -->
-            <div class="item-picture pic2">
+            <div class="item-picture">
+              <img src="img/" alt="Desert Quail inn" width="" height="">
             </div>
             <div class="item-describes">
               <h2>Desert Quail inn</h2>
@@ -128,9 +136,11 @@
           </div> <!-- Конец блока рис. + подробности -->
 
             <section class="item-rating"> <!-- Начало блока рейтинг -->
-              <div class="rating-star2">
+              <div class="rating-star-wrapper"> 
+                <span class="rating-star"></span> 
+                <span class="rating-star"></span> 
               </div>
-              <div class="rating-star">
+              <div class="rating-result">
                 <p>Рейтинг: 8,9</p>
               </div>
             </section> <!-- Конец блока рейтинг -->          
@@ -139,7 +149,8 @@
         <article class="item"> <!-- Начало блока вывода 3го результа -->
           
           <div class="item-info"> <!-- Начало блока рис. + подробности -->
-            <div class="item-picture pic3">
+            <div class="item-picture">
+              <img src="img/" alt="Villas At Poco Diablo" width="" height="">
             </div>
             <div class="item-describes">
               <h2>Villas At Poco Diablo</h2>
@@ -155,13 +166,16 @@
           </div> <!-- Конец блока рис. + подробности -->
 
             <section class="item-rating"> <!-- Начало блока рейтинг -->
-              <div class="rating-star3">
+              <div class="rating-star-wrapper"> 
+                <span class="rating-star"></span> 
+                <span class="rating-star"></span> 
+                <span class="rating-star"></span> 
               </div>
-              <div class="rating-star">
+              <div class="rating-result">
                 <p>Рейтинг: 9,2</p>
               </div>
             </section> <!-- Конец блока рейтинг -->          
-        </article> <!-- Конец блока вывода 2го результа -->
+        </article> <!-- Конец блока вывода 3го результа -->
 
       </section> <!-- Конец блока вывода результатов поиска -->
 

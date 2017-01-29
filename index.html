@@ -118,43 +118,52 @@
       	  <img src="#" width="" height="" alt="Карта местности">
       	</section>
 
-      	<section class="popup">
+      	<section class="popup"> <!-- Начало окна popup -->
       		<div class="popup-title">
       			<p>Поиск гостиницы в Седоне</p>
       		</div>
       		<div class="popup-content">
 
       		  <div class="popup-choice">
-      			<span> Дата заезда:</span>
+      			<label for="date-from">Дата заезда:</label>
       			<div class="data">
-      				<span>24 апреля 2016</span>
-      				<div class="calendar"></div>
+      			  <input id="date-from" value="24 апреля 2016"> 
+				  <button class="calendar"></button> 
       			</div>
       		  </div>
 
       		  <div class="popup-choice">
-      			<span> Дата выезда:</span>
+      		  	<label for="date-out">Дата выезда:</label>
       			<div class="data">
-      				<span>4 июля 2016</span>
-      				<div class="calendar"></div>
+      			  <input id="date-out" value="4 июля 2016"> 
+				  <button class="calendar"></button>
       			</div>
       		  </div>
 
-      		  <div class="popup-guests"> <!-- Начало окна popup -->
+      		  <div class="popup-guests"> 
       		    <div class="guests-adults">
-      		    	<span>Взрослые</span>
+      		    	<label for="adults">Взрослые:</label>
       		    	<div class="adults-number">
-      		    	  <button name="number-decrease">-</button>      		    	  
-      		    	  <label>
-      		    	  	<input type="number" name="adults" value="2" min="1">
-      		    	  </label>
-      		    	  <button name="number-increase">+</button>
+      		    	  <button class="number-decrease">-</button>      		    	  
+      		    	  <input type="number" id="adults" name="adults" value="2" min="1">
+      		    	  <button class="number-increase">+</button>
       		    	</div>
       		    </div>
-      		  </div> <!-- Конец окна popup -->
+      		    <div class="guests-children">
+      		    	<label for="children">Дети:</label>
+      		    	<div class="children-number">
+      		    	  <button class="number-decrease">-</button>      		    	  
+      		    	  <input type="number" id="children" name="children" value="0" min="0">
+      		    	  <button class="number-increase">+</button>
+      		    	</div>
+      		    </div>
+      		  </div> 
 
+      		    <div class="popup-found">
+      		    	<button class="found-btn">Найти</button>
+      		    </div>
       		</div>
-      	</section>
+      	</section> <!-- Конец окна popup -->
 
       </section> <!-- Конец средней части контента -->
     </section> <!-- Конец контента -->

@@ -1,0 +1,39 @@
+body {
+	font-family: "PT Sans", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+h2 {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.item-describes h2 {
+	line-height: 26px;
+	color: #000000;
+}
+
+h3 {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.filter h3 {
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.main-nav {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+}

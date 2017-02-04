@@ -4,6 +4,7 @@ body {
 	font-weight: bold;
 	margin: 0;
 	padding: 0;
+	min-width: 1200px;
 }
 
 h1 {
@@ -37,6 +38,11 @@ h3 {
 
 a {
 	text-decoration: none;
+	color: #ffffff;
+}
+
+li {
+	list-style: none;
 }
 
 .wrapper {
@@ -47,22 +53,43 @@ a {
 
 .main-nav ul {
 	font-size: 0;
-	
 }
 
 .main-nav li {
-	display: inline-block;
 	font-size: 14px;
 	line-height: 26px;
-	color: #000000;
 	width: 240px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: coral;
+}
+
+.main-nav li:nth-child(1),
+ .main-nav li:nth-child(2){
+	float: left;
+}
+
+.main-nav li:nth-child(3),
+.main-nav li:nth-child(4) {
+	float: right;
+}
+
+.logo {
+	position: absolute;
+	left: 530px;
+	top: 0px;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .picture {
 	background: 0 -50px url("../img/fon-mid.jpg");
 	height: 510px;
 	padding-top: 75px;
-
 }
 
 .picture-text {
@@ -98,16 +125,14 @@ a {
 	font-size: 14px;
 	line-height: 21px;
 	text-align: center;
-	padding-top: 55px;
-	padding-bottom: 55px;
-}
-
-.feature-picture {
-	width: 800px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .tips-wrapper {
 	font-size: 0;
+	margin-top: 60px;
+	margin-bottom: 80px;
 }
 
 .tip {
@@ -135,6 +160,10 @@ a {
 	padding-bottom: 65px;
 }
 
+.booking-wrapper {
+	position: relative;
+}
+
 .booking {
 	background-color: tomato; 
 	text-align: center;
@@ -154,9 +183,13 @@ a {
 }
 
 .popup {
-	width: 575px;
-	height: 474px;
-	background-color: coral;
+	width: 570px;
+	height: 480px;
+	background-color: #ffffff;
+	position: absolute;
+	right: 320px;
+	top: 208px;
+	z-index: 1;
 }
 
 .popup-title {
@@ -169,8 +202,83 @@ a {
 	color: #ffffff;
 }
 
+.popup-title p {
+	margin: 0;
+}
+
+.popup-content {
+	padding: 55px;
+}
+
+.popup-content label {
+	font-size: 14px;
+	line-height: 26px;
+	}
+
+.popup-choice {
+	display: flex;
+	margin-bottom: 30px; 
+	align-items: baseline;
+}
+
+.popup-choice button {
+	position: absolute;
+	left: 330px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+	background: url("../img/calendar.png");
+	border: 0;
+}
+
+.data {
+	position: relative;
+}
+
+.data input {
+	width: 330px;
+	background-color: #f2f2f2;
+	border: 0;
+	padding: 10px;
+	margin-left: 15px;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.popup-guests {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 55px;
+}
+
+.guests-adults,
+.guests-children {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.guests-children label,
+.guests-adults label {
+	margin-right: 35px;
+	}
+
+.number {
+	display: flex;
+}
+
+.number-decrease,
+.number-increase,
+.number input {
+	width: 40px;
+	height: 40px;
+	background-color: #f2f2f2;
+	border: 0; 
+	text-align: center;
+}
+
 .found-btn {
-	width: 455px;
+	width: 460px;
 	height: 60px;
 	background-color: #81b3d2;
 	font-size: 21px;
@@ -184,7 +292,7 @@ a {
 	justify-content: space-around;
 	align-items: center;
 	background-color: yellowgreen;
-	color: #000000;
+
 }
 
 .footer-hashtag {
@@ -196,18 +304,17 @@ a {
 	display: inline-block;
 	width: 45px;
 	height: 45px;
-	background-color: blue;
-	border: 1px solid black;
+	background: blue 50% 50% no-repeat;
 }
 
 .social-btn-tw {
-	background: 50% 50% url("../img/tw.png") no-repeat;
+	background-image: url("../img/tw.png");
 }
 
 .social-btn-fb {
-	background: 50% 50% url("../img/fb.png") no-repeat;
+	background-image: url("../img/fb.png");
 }
 
 .social-btn-yt {
-	background: 50% 50% url("../img/yt.png") no-repeat;
+	background-image: url("../img/yt.png");
 }

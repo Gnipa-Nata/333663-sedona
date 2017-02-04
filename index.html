@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="wrapper"> <!-- Начало блока всего контента -->
-    <header class="main-header"> <!-- Начало шапки сайта -->
+    <header class="main-header clearfix"> <!-- Начало шапки сайта -->
       <nav class="main-nav">
         <ul>
           <li><a href="#">Информация</a></li>
@@ -46,10 +46,8 @@
       	    <p>Седона - не аттракцион для туристов,<br>
       	    там течет своя жизнь</p>
       	  </section> 
-      	  <div class="feature-picture">
-            <img src="img/fact1.jpg" width="800" height="255">
-      	  </div>
-        </div> <!-- Конец факта №1 -->
+      	  <img src="img/fact1.jpg" width="800" height="255">
+      	</div> <!-- Конец факта №1 -->
     
       	<section class="tips-wrapper"> <!-- Начало блока советов -->
       	  <article class="tip">
@@ -75,9 +73,7 @@
       	</section> <!-- Конец блока советов -->
 
       	<div class="feature-wrapper"> <!-- Начало факта №2 -->
-      	  <div class="feature-picture">
-            <img src="img/fact2.jpg" width="800" height="255">
-      	  </div>
+          <img src="img/fact2.jpg" width="800" height="255">
       	  <section class="feature-fact"> 
       	    <h2>Там есть<br>
       	    мост дьявола</h2>
@@ -111,11 +107,12 @@
       	  </section>      	  
       	</section>  <!-- Конец фактов №3,4,5 -->
 
+        <div class="booking-wrapper">
       	<section class="booking">
       	  <span class="booking-title">Заинтересовались?</span>
       	  <p class="booking-text">Укажите предполагаемые даты поездки,<br>
       	  и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-      	</section>
+      	</section> 
 
       	<section class="map">
       	  <img src="img/map.jpg" width="1200" height="475" alt="Карта местности">
@@ -130,7 +127,7 @@
       		    <div class="popup-choice">
                 <label for="date-from">Дата заезда:</label>
       			    <div class="data">
-      			      <input id="date-from" value="24 апреля 2016"> 
+      			      <input id="date-from" value="24 апреля 2017"> 
 				          <button class="calendar"></button> 
       			    </div>
               </div>
@@ -138,7 +135,7 @@
       		    <div class="popup-choice">
       		  	  <label for="date-out">Дата выезда:</label>
       			    <div class="data">
-      			      <input id="date-out" value="4 июля 2016"> 
+      			      <input id="date-out" value="4 июля 2017"> 
 				          <button class="calendar"></button>
       			    </div>
       		    </div>
@@ -146,7 +143,7 @@
       		    <div class="popup-guests"> 
       		      <div class="guests-adults">
       		    	  <label for="adults">Взрослые:</label>
-      		    	  <div class="adults-number">
+      		    	  <div class="number">
       		    	    <button class="number-decrease">-</button>      		    	  
       		    	    <input type="number" id="adults" name="adults" value="2" min="1">
       		    	    <button class="number-increase">+</button>
@@ -154,7 +151,7 @@
       		      </div>
       		      <div class="guests-children">
       		    	  <label for="children">Дети:</label>
-      		    	  <div class="children-number">
+      		    	  <div class="number">
       		    	    <button class="number-decrease">-</button>      		    	  
       		    	    <input type="number" id="children" name="children" value="0" min="0">
       		    	    <button class="number-increase">+</button>
@@ -168,6 +165,7 @@
             </form>  
       		</div>
       	</section> <!-- Конец окна popup -->
+        </div>
 
       </section> <!-- Конец средней части контента -->
     </section> <!-- Конец контента -->
@@ -178,9 +176,9 @@
     	</section>
 
     	<section class="footer-social">
-    	  <a class="social-btn social-btn-tw" href="#">1</a>
-        <a class="social-btn social-btn-fb" href="#">2</a>
-        <a class="social-btn social-btn-yt" href="#">3</a>
+    	  <a class="social-btn social-btn-tw" href="#"></a>
+        <a class="social-btn social-btn-fb" href="#"></a>
+        <a class="social-btn social-btn-yt" href="#"></a>
     	</section>
 
     	<section class="footer-copyright">

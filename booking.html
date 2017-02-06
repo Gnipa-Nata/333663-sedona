@@ -7,24 +7,24 @@
   </head>
   <body>
     <div class="wrapper"> <!-- Начало блока всего контента -->
-    <header class="main-header"> <!-- Начало шапки сайта -->
+    <header class="main-header clearfix"> <!-- Начало шапки сайта -->
       <nav class="main-nav">
         <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта штата</a></li>
           <li><a href="#">Гостиницы</a></li>
+          <li><a href="#">Карта штата</a></li>
         </ul>
       </nav>
       <section class="logo">
-      	<a href="#"><img src="img/logo.png" width="140" height="70" alt="Логотип"></a>
+        <a href="#"><img src="img/logo.png" width="140" height="70" alt="Логотип"></a>
       </section>
     </header> <!-- Конец шапки сайта -->
 
     <section class="content"> <!-- Начало контента -->
 
       <div class="filter"> <!-- Начало блока фильтра -->
-
+        
         <section class="filter-infrastructure">
           <h3>Инфраструктура:</h3>
           <label>
@@ -58,12 +58,13 @@
         </section>
 
         <section class="filter-rang">
-          <p>Стоимость в сутки (р):</p>
+          <h3>Стоимость в сутки (р):</h3>
           <!--Здесь будет rang -->
           <label>
-            <button type="button" value="" name="Показать"></button>            
+            <button type="button" value="">Показать</button>            
           </label>
-        </section>        
+        </section>  
+
       </div> <!-- Конец блока фильтров -->
 
       <section class="sort">
@@ -79,15 +80,14 @@
           </ul>
         </section>
         <div class="sort-order">
-          <a class="order acs" href=""></a>
-          <a class="order decs" href=""></a>
+          <a class="order-acs" href=""></a>
+          <a class="order-decs" href=""></a>
         </div>
       </section>
 
       <section class="results"> <!-- Начало блока вывода результатов поиска -->
         <article class="item"> <!-- Начало блока вывода 1го результа -->
           
-          <div class="item-info"> <!-- Начало блока рис. + подробности -->
             <div class="item-picture">
               <img src="img/Amara Resort & Spa.jpg" alt="Amara Resort & Spa" width="135" height="90">
             </div>
@@ -99,11 +99,9 @@
               </div>
               <div class="item-btn-wrapper">
                 <a class="item-btn details" href="#">Подробности</a>
-                <a class="item-btn booking" href="#">Забронировать</a>
+                <a class="item-btn reserve" href="#">Забронировать</a>
               </div>
             </div>
-          </div> <!-- Конец блока рис. + подробности -->
-
             <section class="item-rating"> <!-- Начало блока рейтинг -->
               <div class="rating-star-wrapper"> 
                 <span class="rating-star"></span> 
@@ -119,7 +117,6 @@
 
         <article class="item"> <!-- Начало блока вывода 2го результа -->
           
-          <div class="item-info"> <!-- Начало блока рис. + подробности -->
             <div class="item-picture">
               <img src="img/Desert Quail inn.jpg" alt="Desert Quail inn" width="135" height="90">
             </div>
@@ -131,11 +128,9 @@
               </div>
               <div class="item-btn-wrapper">
                 <a class="item-btn details" href="#">Подробности</a>
-                <a class="item-btn booking" href="#">Забронировать</a>
+                <a class="item-btn reserve" href="#">Забронировать</a>
               </div>
             </div>
-          </div> <!-- Конец блока рис. + подробности -->
-
             <section class="item-rating"> <!-- Начало блока рейтинг -->
               <div class="rating-star-wrapper"> 
                 <span class="rating-star"></span> 
@@ -149,7 +144,6 @@
 
         <article class="item"> <!-- Начало блока вывода 3го результа -->
           
-          <div class="item-info"> <!-- Начало блока рис. + подробности -->
             <div class="item-picture">
               <img src="img/Villas At Poco Diablo.jpg" alt="Villas At Poco Diablo" width="135" height="90">
             </div>
@@ -161,11 +155,9 @@
               </div>
               <div class="item-btn-wrapper">
                 <a class="item-btn details" href="#">Подробности</a>
-                <a class="item-btn booking" href="#">Забронировать</a>
+                <a class="item-btn reserve" href="#">Забронировать</a>
               </div>
             </div>
-          </div> <!-- Конец блока рис. + подробности -->
-
             <section class="item-rating"> <!-- Начало блока рейтинг -->
               <div class="rating-star-wrapper"> 
                 <span class="rating-star"></span> 
@@ -188,9 +180,9 @@
     	</section>
 
     	<section class="footer-social">
-    	  <a class="social-btn social-btn-tw" href="#">Твит</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-yt" href="#">Ютюб</a>
+    	  <a class="social-btn social-btn-tw" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-yt" href="#"></a>
     	</section>
 
     	<section class="footer-copyright">

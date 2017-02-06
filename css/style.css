@@ -1,3 +1,17 @@
+@font-face {
+	font-family: "PTSans";
+	src: url("../fonts/ptsans.woff") format(woff),
+	url("../fonts/ptsans.woff2") format(woff2);
+}
+
+@font-face {
+	font-family: "PTSansbold";
+	src: url("../fonts/ptsansbold.woff") format(woff),
+	url("../fonts/ptsansbold.woff2") format(woff2);
+	font-weight: bold;
+}
+
+
 body {
 	font-family: "PT Sans", sans-serif;
 	text-transform: uppercase;
@@ -18,11 +32,6 @@ h2 {
 	font-size: 21px;
 	line-height: 21px;
 	color: #ffffff;
-}
-
-.item-describes h2 {
-	line-height: 26px;
-	color: #000000;
 }
 
 h3 {
@@ -53,6 +62,8 @@ li {
 
 .main-nav ul {
 	font-size: 0;
+	padding: 0;
+
 }
 
 .main-nav li {
@@ -62,6 +73,7 @@ li {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background-color: coral;
+	text-align: center;
 }
 
 .main-nav li:nth-child(1),
@@ -76,8 +88,9 @@ li {
 
 .logo {
 	position: absolute;
-	left: 530px;
-	top: 0px;
+	left: 50%;
+	margin-left: -70px;
+	z-index: 2;
 }
 
 .clearfix::after {
@@ -90,6 +103,7 @@ li {
 	background: 0 -50px url("../img/fon-mid.jpg");
 	height: 510px;
 	padding-top: 75px;
+	position: relative;
 }
 
 .picture-text {
@@ -97,8 +111,11 @@ li {
 }
 
 .picture-mask {
-	background: red url("../img/mask.png");
+	position: absolute;
+	background: url("../img/mask.png");
+	z-index: 6;
 }
+	
 
 .content-top {
 	background-color: green;
@@ -125,8 +142,9 @@ li {
 	font-size: 14px;
 	line-height: 21px;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .tips-wrapper {
@@ -187,7 +205,8 @@ li {
 	height: 480px;
 	background-color: #ffffff;
 	position: absolute;
-	right: 320px;
+	left: 50%;
+	margin-left: -285px;
 	top: 208px;
 	z-index: 1;
 }
@@ -275,6 +294,7 @@ li {
 	background-color: #f2f2f2;
 	border: 0; 
 	text-align: center;
+	padding: 0;
 }
 
 .found-btn {
@@ -317,4 +337,184 @@ li {
 
 .social-btn-yt {
 	background-image: url("../img/yt.png");
+}
+
+.filter {
+	background: #78b3d2 url("../img/fon-header.jpg");
+	display: flex;
+	padding: 30px 75px;
+	color: #ffffff;
+}
+
+.filter h3 {
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.filter p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.filter h3,
+.filter p {
+	margin: 0;
+	padding: 0;
+}
+
+.filter-infrastructure,
+.filter-type-house,
+.filter-rang {
+	display: flex;
+	flex-direction: column;
+}
+
+.filter-infrastructure input [type="checkbox"]+label:after {
+	width: 25px;
+	height: 20px;
+	background-image: url("../img/chek.png");
+}
+
+.filter-rang {
+	margin-left: auto;
+}
+
+.filter-rang button {
+	width: 133px;
+	height: 28px;
+	background: transparent;
+	border: 1px solid #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.sort {
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+}
+
+.sort p,
+.sort ul {
+	margin: 0;
+}
+
+.sort-find {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.sort-items {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 50px;
+}
+
+.sort-items ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.sort-items a {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+	margin-left: 35px;
+}
+
+.order-acs,
+.order-decs {
+	display: inline-block;
+	width: 11px;
+	height: 10px;
+}
+
+.sort-order {
+	margin-left: auto;
+}
+
+.order-acs {
+	background-image: url("../img/acs.png");
+}
+
+.order-decs {
+	background-image: url("../img/decs.png");
+}
+
+.item {
+	display: flex;
+	padding: 30px 0;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+}
+
+.item p,
+.item h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.item-describes h2 {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.item-describes {
+	margin-left: 30px;
+}
+
+.item-btn {
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+
+
+.details {
+	display: inline-block;
+	width: 110px;
+	height: 25px;
+	background-color: #81b3d2;	
+}
+
+.reserve {
+	display: inline-block;
+	width: 140px;
+	height: 25px;
+	background-color: #766357;	
+}
+
+.item-rating {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.rating-star {
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/star.png");
+}
+
+.rating-star-wrapper span {
+	display: inline-block;
+}
+
+.rating-result p {
+	width: 110px;
+	height: 30px;
+	background-color: #f2f2f2;
+	font-size: 14px;
+	line-height: 21px;
+	color: #666666;
 }

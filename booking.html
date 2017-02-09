@@ -23,20 +23,20 @@
 
     <section class="content"> <!-- Начало контента -->
 
-      <div class="filter"> <!-- Начало блока фильтра -->
+      <div class="filter inner"> <!-- Начало блока фильтра -->
         
         <section class="filter-infrastructure">
           <h3>Инфраструктура:</h3>
           <label>
-            <input type="checkbox" name="infrastructure" value="pool" checked>
+            <input type="checkbox" name="infrastructure" value="pool" checked hidden>
             <span>Бассейн</span>
           </label>
           <label>
-            <input type="checkbox" name="infrastructure" value="parking">
+            <input type="checkbox" name="infrastructure" value="parking" hidden>
             <span>Парковка</span>
           </label>
           <label>
-            <input type="checkbox" name="infrastructure" value="wi-fi">
+            <input type="checkbox" name="infrastructure" value="wi-fi" hidden>
             <span>WI-FI</span>
           </label>
         </section>
@@ -67,14 +67,14 @@
 
       </div> <!-- Конец блока фильтров -->
 
-      <section class="sort">
+      <section class="sort inner">
         <div class="sort-find">
           <p>Найдено:</p>
         </div>
         <section class="sort-items">
           <p>Сортировка:</p>
           <ul>
-            <li><a href="#">По цене</a></li>
+            <li><a class="active">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
           </ul>
@@ -87,9 +87,8 @@
 
       <section class="results"> <!-- Начало блока вывода результатов поиска -->
         <article class="item"> <!-- Начало блока вывода 1го результа -->
-          
             <div class="item-picture">
-              <img src="img/Amara Resort & Spa.jpg" alt="Amara Resort & Spa" width="135" height="90">
+              <img src="img/Amara Resort & Spa.jpg" alt="Amara Resort & Spa" width="135" height="95">
             </div>
             <div class="item-describes">
               <h2>Amara Resort & Spa</h2>
@@ -98,7 +97,7 @@
                 <span class="item-price">от 3500 р.</span>
               </div>
               <div class="item-btn-wrapper">
-                <a class="item-btn details" href="#">Подробности</a>
+                <a class="item-btn details" href="#">Подробнее</a>
                 <a class="item-btn reserve" href="#">Забронировать</a>
               </div>
             </div>
@@ -114,7 +113,7 @@
               </div>
             </section> <!-- Конец блока рейтинг -->          
         </article> <!-- Конец блока вывода 1го результа -->
-
+        
         <article class="item"> <!-- Начало блока вывода 2го результа -->
           
             <div class="item-picture">
@@ -127,7 +126,7 @@
                 <span class="item-price">от 2000 р.</span>
               </div>
               <div class="item-btn-wrapper">
-                <a class="item-btn details" href="#">Подробности</a>
+                <a class="item-btn details" href="#">Подробнее</a>
                 <a class="item-btn reserve" href="#">Забронировать</a>
               </div>
             </div>
@@ -143,9 +142,8 @@
         </article> <!-- Конец блока вывода 2го результа -->
 
         <article class="item"> <!-- Начало блока вывода 3го результа -->
-          
             <div class="item-picture">
-              <img src="img/Villas At Poco Diablo.jpg" alt="Villas At Poco Diablo" width="135" height="90">
+              <img src="img/Villas At Poco Diablo.jpg" alt="Villas At Poco Diablo" width="135" height="95">
             </div>
             <div class="item-describes">
               <h2>Villas At Poco Diablo</h2>
@@ -154,7 +152,7 @@
                 <span class="item-price">от 4000 р.</span>
               </div>
               <div class="item-btn-wrapper">
-                <a class="item-btn details" href="#">Подробности</a>
+                <a class="item-btn details" href="#">Подробнее</a>
                 <a class="item-btn reserve" href="#">Забронировать</a>
               </div>
             </div>
@@ -167,7 +165,7 @@
               <div class="rating-result">
                 <p>Рейтинг: 9,2</p>
               </div>
-            </section> <!-- Конец блока рейтинг -->          
+            </section> <!-- Конец блока рейтинг -->  
         </article> <!-- Конец блока вывода 3го результа -->
 
       </section> <!-- Конец блока вывода результатов поиска -->

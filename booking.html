@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -12,7 +13,7 @@
         <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a class="active">Гостиницы</a></li>
           <li><a href="#">Карта штата</a></li>
         </ul>
       </nav>
@@ -58,8 +59,29 @@
         </section>
 
         <section class="filter-rang">
+
           <h3>Стоимость в сутки (р):</h3>
-          <!--Здесь будет rang -->
+
+          <div class="filter-price">
+            <label class="price-min">
+              от <input type="text" name="price-min" value="0">
+            </label>
+            <label class="price-max">
+              до <input type="text" name="price-max" value="3000">
+            </label>
+          </div>
+
+          <div class="range">
+            <div class="scale">
+              <div class="scale-line">
+              </div>
+            </div>
+            <div class="toggle range-min">
+            </div>
+            <div class="toggle range-max">
+            </div>
+          </div>
+
           <label>
             <button type="button" value="">Показать</button>            
           </label>
@@ -91,14 +113,14 @@
               <img src="img/Amara Resort & Spa.jpg" alt="Amara Resort & Spa" width="135" height="95">
             </div>
             <div class="item-describes">
-              <h2>Amara Resort & Spa</h2>
+              <h2 class="describes-title"><a href="#">Amara Resort & Spa</a></h2>
               <div class="item-details">
                 <span class="item-type-house">Гостиница</span>
                 <span class="item-price">от 3500 р.</span>
               </div>
               <div class="item-btn-wrapper">
-                <a class="item-btn details" href="#">Подробнее</a>
-                <a class="item-btn reserve" href="#">Забронировать</a>
+                <a class="item-btn details" href="#"><span>Подробнее</span></a>
+                <a class="item-btn reserve" href="#"><span>Забронировать</span></a>
               </div>
             </div>
             <section class="item-rating"> <!-- Начало блока рейтинг -->
@@ -120,14 +142,14 @@
               <img src="img/Desert Quail inn.jpg" alt="Desert Quail inn" width="135" height="90">
             </div>
             <div class="item-describes">
-              <h2>Desert Quail inn</h2>
+              <h2 class="describes-title"><a href="#">Desert Quail inn</a></h2>
               <div class="item-details">
                 <span class="item-type-house">Мотель</span>
                 <span class="item-price">от 2000 р.</span>
               </div>
               <div class="item-btn-wrapper">
-                <a class="item-btn details" href="#">Подробнее</a>
-                <a class="item-btn reserve" href="#">Забронировать</a>
+                <a class="item-btn details" href="#"><span>Подробнее</span></a>
+                <a class="item-btn reserve" href="#"><span>Забронировать</span></a>
               </div>
             </div>
             <section class="item-rating"> <!-- Начало блока рейтинг -->
@@ -146,14 +168,14 @@
               <img src="img/Villas At Poco Diablo.jpg" alt="Villas At Poco Diablo" width="135" height="95">
             </div>
             <div class="item-describes">
-              <h2>Villas At Poco Diablo</h2>
+              <h2 class="describes-title"><a href="#">Villas At Poco Diablo</a></h2>
               <div class="item-details">
                 <span class="item-type-house">Апартаменты</span>
                 <span class="item-price">от 4000 р.</span>
               </div>
               <div class="item-btn-wrapper">
-                <a class="item-btn details" href="#">Подробнее</a>
-                <a class="item-btn reserve" href="#">Забронировать</a>
+                <a class="item-btn details" href="#"><span>Подробнее</span></a>
+                <a class="item-btn reserve" href="#"><span>Забронировать</span></a>
               </div>
             </div>
             <section class="item-rating"> <!-- Начало блока рейтинг -->

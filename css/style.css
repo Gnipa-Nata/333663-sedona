@@ -440,10 +440,21 @@ a {
 }
 
 .filter label {
-	padding-top: 30px;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
+}
+
+.filter-infrastructure label,
+.filter-type-house label {
+	padding-top: 30px;
+}
+
+.filter-infrastructure span,
+.filter-type-house span {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
 }
 
 .filter input[type="checkbox"] {
@@ -479,10 +490,12 @@ a {
 }
 
 .filter-price {
+	display: flex;
+	justify-content: space-around;
+	position: relative;
 	height: 36px;
 	border: 2px solid #ffffff;
-	border-radius: 2px;
-	position: relative;
+	border-radius: 2px;	
 	margin-top: 10px;
 	font-size: 0;
 }
@@ -491,31 +504,30 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 36px;
 	font-weight: normal;
 	cursor: pointer;
-	background-color: red;
 }
 
 .filter-price .price-min,
 .filter-price .price-max {
 	width: 90px;
-	padding-left: 65px;
+	/*padding-left: 65px;*/
 }
 
 .filter-price input {
 	width: 50px;
 	margin: 0;
-	background: #ffffff;
 	border: none;
 	color: inherit;
 	font: inherit;
+	background: none;
 }
 
 .filter-price:after {
 	content: "";
 	position: absolute;
-	top: 50%;
+	top: 20%;
 	left: 50%;
 	width: 2px;
 	height: 22px;
@@ -523,7 +535,7 @@ a {
 }
 
 .range {
-	margin-top: 15px;
+	margin-top: 20px;
 	position: relative;
 	height: 2px;
 }
@@ -543,15 +555,18 @@ a {
 }
 
 .toggle {
-    position:absolute;
+    position: absolute;
     top: -8px;
-    width:4px;
-    height:4px;
-    border:8px solid #ffffff;
-    border-radius:50%;
-    background:#ababab;
-    cursor:pointer;
-    
+    width: 4px;
+    height: 4px;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ababab;
+    cursor: pointer;
+}
+
+.toggle:hover {
+	background-color: #1c4f80;
 }
 
 .range-min {
@@ -565,7 +580,7 @@ a {
 .filter-rang button {
 	display: block;
 	width: 133px;
-	height: 28px;
+	height: 32px;
 	background: transparent;
 	border: 1px solid #ffffff;
 	border-radius: 2px;
@@ -575,6 +590,8 @@ a {
 	font-weight: normal;
 	text-transform: uppercase;
 	margin: 0 auto;
+	margin-top: 30px;
+	cursor: pointer;
 }
 
 .filter-rang button:hover {

@@ -1,16 +1,23 @@
 @font-face {
-	font-family: "PTSans";
-	src: url("../fonts/ptsans.woff") format(woff),
-	url("../fonts/ptsans.woff2") format(woff2);
+	font-family: "PTSans", "Arial", sans-serif;
+	src: 
+		local("PTSans"),
+		url("../fonts/ptsans.woff2") format(woff2),
+		url("../fonts/ptsans.woff") format(woff);
 }
 
 @font-face {
-	font-family: "PTSansbold";
-	src: url("../fonts/ptsansbold.woff") format(woff),
-	url("../fonts/ptsansbold.woff2") format(woff2);
+	font-family: "PTSansbold", "Arial", sans-serif;
+	src: 
+		local("PTSansbold"),
+		url("../fonts/ptsansbold.woff2") format(woff2),
+		url("../fonts/ptsansbold.woff") format(woff);
 	font-weight: bold;
 }
 
+html {
+	background-color: #f2f2f2;
+}
 
 body {
 	font-family: "PT Sans", sans-serif;
@@ -21,6 +28,7 @@ body {
 	margin: 0;
 	padding: 0;
 	min-width: 1200px;
+	background-color: #ffffff;
 }
 
 a {
@@ -90,7 +98,7 @@ a {
 
 .picture {
 	background: #c49b7f 0 -50px url("../img/fon-mid.jpg");
-	height: 510px;
+	height: 433px;
 	padding-top: 75px;
 	position: relative;
 }
@@ -103,14 +111,14 @@ a {
 	width: 100%;
 	height: 57px;
 	position: absolute;
-	top: 530px;
+	top: 451px;
 	background: url("../img/mask.png");
 	z-index: 6;
 }
 	
 .content-top {
-	height: 150px;
-	padding-top: 65px;
+	padding-top: 63px;
+	padding-bottom: 53px;
 }
 
 .content-top p,
@@ -124,13 +132,14 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
-	margin-bottom: 30px;
+	margin-bottom: 33px;
 }
 
 .content-top p {
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 26px;
 	color: #333333;
+	font-weight: normal;
 }
 
 .feature-wrapper {
@@ -168,7 +177,6 @@ a {
 	display: inline-block;
 	width: 400px;
 	text-align: center;
-	color: #333333;
 }
 
 .tip h3 {
@@ -194,7 +202,7 @@ a {
 	width: 400px;
 	text-align: center;
 	padding-top: 50px;
-	padding-bottom: 65px;
+	padding-bottom: 57px;
 }
 
 .features-item h2 {
@@ -264,10 +272,6 @@ a {
 	text-transform: inherit;
 }
 
-.popup-title p {
-	margin: 0;
-}
-
 .popup-content {
 	padding: 55px;
 }
@@ -275,6 +279,7 @@ a {
 .popup-content label {
 	font-size: 14px;
 	line-height: 26px;
+	cursor: pointer;
 }
 
 .popup-choice {
@@ -286,19 +291,23 @@ a {
 .popup-choice button {
 	position: absolute;
 	left: 330px;
-	top: 10px;
-	width: 20px;
-	height: 20px;
-	background: url("../img/calendar.png");
+	top: 12px;
+	width: 21px;
+	height: 22px;
+	background: -5px -5px url("../img/sprite.png");
 	border: 0;
+	cursor: pointer;
 }
 
 .popup-choice button:hover {
-	background-image: url("../img/calendar hover.png");
+	background-image: url("../img/sprite.png");
+	background-position:  -5px -69px;
 }
 
 .popup-choice button:active {
-	background: url("../img/calendar active.png");
+	background: url("../img/sprite.png");
+	background-position:  -5px -37px;
+	outline: none;
 }
 
 .data {
@@ -313,6 +322,9 @@ a {
 	margin-left: 15px;
 	font-size: 14px;
 	line-height: 26px;
+	font-family: inherit;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 .data input:hover {
@@ -354,9 +366,19 @@ a {
 	width: 40px;
 	height: 40px;
 	background-color: #f2f2f2;
-	border: 0; 
+	border: 0;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: inherit;
+	text-transform: inherit; 
 	text-align: center;
 	padding: 0;
+	cursor: pointer;
+}
+
+.number-decrease,
+.number-increase {
+	font-size: 24px;
 }
 
 .number-decrease,
@@ -380,10 +402,12 @@ a {
 	background-color: #81b3d2;
 	font-size: 21px;
 	line-height: 26px;
+	font-family: inherit;
 	color: #ffffff;
 	text-transform: inherit;
 	font-weight: bold; 
 	border: none;
+	cursor: pointer;
 }
 
 .found-btn:hover {
@@ -411,9 +435,12 @@ a {
 
 .social-btn {
 	display: inline-block;
+	vertical-align: middle;
 	width: 45px;
 	height: 45px;
+	font-size: 0px;
 	background: #81b3d2 50% 50% no-repeat;
+	position: relative;
 }
 
 .social-btn:hover {
@@ -424,16 +451,32 @@ a {
 	background-color: #5496bd;
 }
 
-.social-btn-tw {
-	background-image: url("../img/tw.png");
+.social-btn::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
 }
 
-.social-btn-fb {
-	background-image: url("../img/fb.png");
+.social-btn-tw::before {
+	width: 17px;
+    height: 15px;
+	background-position: -5px -368px;
 }
 
-.social-btn-yt {
-	background-image: url("../img/yt.png");
+.social-btn-fb::before {
+	width: 10px;
+    height: 19px;
+	background-position: -5px -165px;
+}
+
+.social-btn-yt::before {
+	width: 20px;
+    height: 16px;
+	background-position: -5px -393px;
 }
 
 .footer-copyright {
@@ -452,15 +495,18 @@ a {
 	width: 115px;
 	height: 40px;
 	margin-left: 8px;
-	background: url("../img/logo-academy.png") no-repeat;
+	background: url("../img/sprite.png") no-repeat;
+	background-position: -5px -194px;
 }
 
 .copyright-logo:hover {
-	background: url("../img/logo-academy-hover.png") no-repeat;
+	background: url("../img/sprite.png") no-repeat;
+	background-position: -5px -292px;
 }
 
 .copyright-logo:active {
-	background: url("../img/logo-academy-active.png") no-repeat;
+	background: url("../img/sprite.png") no-repeat;
+	background-position: -5px -243px;
 }
 
 .inner {
@@ -512,9 +558,10 @@ a {
 .filter label>input[type="checkbox"] + span::before {
 	content: "";
     display: inline-block;
-	width: 25px;
-	height: 20px;
-	background-image: url("../img/chek-.png");
+	width: 22px;
+	height: 22px;
+	background-image: url("../img/sprite.png");
+	background-position: -5px -133px;
 	background-repeat: no-repeat;
 	padding-left: 10px;
 }
@@ -522,9 +569,10 @@ a {
 .filter label>input[type="checkbox"]:checked + span::before {
 	content: "";
     display: inline-block;
-	width: 25px;
-	height: 20px;
-	background-image: url("../img/chek.png");
+	width: 26px;
+	height: 22px;
+	background-image: url("../img/sprite.png");
+	background-position: -5px -101px;
 	background-repeat: no-repeat;
 }
 
@@ -858,9 +906,10 @@ a {
 }
 
 .rating-star {
-	width: 15px;
-	height: 15px;
-	background-image: url("../img/star.png");
+	width: 17px;
+	height: 17px;
+	background-image: url("../img/sprite.png");
+	background-position: -5px -341px;
 }
 
 .rating-star-wrapper span {

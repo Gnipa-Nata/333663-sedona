@@ -84,6 +84,7 @@ a {
 }
 
 .logo {
+	display: block;
 	position: absolute;
 	left: 50%;
 	margin-left: -70px;
@@ -117,8 +118,8 @@ a {
 }
 	
 .content-top {
-	padding-top: 63px;
-	padding-bottom: 53px;
+	padding-top: 59px;
+	padding-bottom: 51px;
 }
 
 .content-top p,
@@ -132,7 +133,7 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
-	margin-bottom: 33px;
+	margin-bottom: 28px;
 }
 
 .content-top p {
@@ -146,6 +147,10 @@ a {
 	display: flex;
 }
 
+.feature-wrapper img {
+	display: block;
+}
+
 .feature-fact {
 	width: 400px;
 	text-align: center;
@@ -156,6 +161,7 @@ a {
 }
 
 .feature-fact h2 {
+	margin: 0;
 	font-size: 21px;
 	line-height: 21px;
 	color: #ffffff;
@@ -163,14 +169,19 @@ a {
 
 .feature-fact span,
 .feature-fact p {
+	margin: 0;
 	font-weight: normal;
 	color: #ffffff;
  }
 
+ .feature-fact span {
+ 	margin: 25px 0;
+ }
+
 .tips-wrapper {
 	font-size: 0;
-	margin-top: 60px;
-	margin-bottom: 80px;
+	margin-top: 57px;
+	margin-bottom: 78px;
 }
 
 .tip {
@@ -180,16 +191,41 @@ a {
 }
 
 .tip h3 {
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 23px;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
 }
 
 .tip p {
+	margin: 0;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
 	color: #333333;
+}
+
+.tip-item {
+	width: 75px;
+	height: 70px;
+	background-image: url("../img/home.png");
+	margin: 0 auto;
+}
+
+.home {
+	background-image: url("../img/home.png");
+}
+
+.food {
+	background-image: url("../img/food.png");
+}
+
+.souvenirs {
+	width: 65px;
+	height: 75px;
+	background-image: url("../img/souvenirs.png");
 }
 
 .features {
@@ -201,14 +237,26 @@ a {
 	display: inline-block;
 	width: 400px;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 57px;
+	padding-top: 48px;
+	padding-bottom: 61px;
+}
+
+.features-item h2,
+ .features-item p {
+	margin: 0;
 }
 
 .features-item h2 {
+	margin: 0;
+	margin-bottom: 24px;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
+}
+
+.features-item span {
+	display: block;
+	margin-bottom: 22px;
 }
 
 .features-item p,
@@ -225,16 +273,19 @@ a {
 
 .booking {
 	text-align: center;
-	padding-top: 55px;
-	padding-bottom: 135px;
+	padding-top: 52px;
+	padding-bottom: 133px;
 }
 
 .booking-title {
+	display: block;
 	font-size: 30px;
-	line-height: 24px;
+	line-height: 30px;
 }
 
 .booking-text {
+	margin: 0;
+	margin-top: 27px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #333333;
@@ -242,6 +293,8 @@ a {
 }
 
 .map {
+	width: 100%;
+	height: 475px;
 	font-size: 0;
 }
 
@@ -252,7 +305,7 @@ a {
 	position: absolute;
 	left: 50%;
 	margin-left: -285px;
-	top: 208px;
+	top: 205px;
 	z-index: 1;
 	box-shadow: 0 0 7px -2px;
 }
@@ -273,7 +326,7 @@ a {
 }
 
 .popup-content {
-	padding: 55px;
+	padding: 54px 55px; 
 }
 
 .popup-content label {
@@ -284,14 +337,14 @@ a {
 
 .popup-choice {
 	display: flex;
-	margin-bottom: 30px; 
+	margin-bottom: 29px; 
 	align-items: baseline;
 }
 
 .popup-choice button {
 	position: absolute;
-	left: 330px;
-	top: 12px;
+	left: 336px;
+	top: 9px;
 	width: 21px;
 	height: 22px;
 	background: -5px -5px url("../img/sprite.png");
@@ -315,11 +368,11 @@ a {
 }
 
 .data input {
-	width: 330px;
+	width: 324px;
 	background-color: #f2f2f2;
 	border: 0;
-	padding: 10px;
-	margin-left: 15px;
+	padding: 6px 10px;
+	margin-left: 24px;
 	font-size: 14px;
 	line-height: 26px;
 	font-family: inherit;
@@ -341,7 +394,7 @@ a {
 .popup-guests {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 55px;
+	margin-bottom: 53px;
 }
 
 .guests-adults,
@@ -353,7 +406,7 @@ a {
 
 .guests-children label,
 .guests-adults label {
-	margin-right: 35px;
+	margin-right: 43px;
 }
 
 .number {
@@ -398,7 +451,7 @@ a {
 
 .found-btn {
 	width: 460px;
-	height: 60px;
+	height: 58px;
 	background-color: #81b3d2;
 	font-size: 21px;
 	line-height: 26px;
@@ -421,16 +474,19 @@ a {
 
 .main-footer {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	padding-top: 35px;
-	padding-bottom: 35px;
+	padding: 31px 100px 35px 133px;
 }
 
 .footer-hashtag span {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
+}
+
+.footer-social {
+	margin-left: 27px;
 }
 
 .social-btn {

@@ -13,7 +13,7 @@
         <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="booking.html">Гостиницы</a></li>
           <li><a href="#">Карта штата</a></li>
         </ul>
       </nav>
@@ -26,7 +26,7 @@
 
       <div class="picture">
         <div class="picture-text">
-          <img src="img/text.png" width="458" height="352">
+          <img src="img/text.png" width="458" height="352" alt="Welcome">
         </div>
         <div class="picture-mask">
         </div>
@@ -48,7 +48,7 @@
       	    <p>Седона &ndash; не аттракцион для туристов,<br>
       	    там течет своя жизнь</p>
       	  </section> 
-      	  <img src="img/fact1.jpg" width="800" height="255">
+      	  <img src="img/fact1.jpg" width="800" height="255" alt="Sedona">
       	</div> <!-- Конец факта №1 -->
     
       	<section class="tips-wrapper"> <!-- Начало блока советов -->
@@ -75,7 +75,7 @@
       	</section> <!-- Конец блока советов -->
 
       	<div class="feature-wrapper"> <!-- Начало факта №2 -->
-          <img src="img/fact2.jpg" width="800" height="255">
+          <img src="img/fact2.jpg" width="800" height="255" alt="Devil's bridge">
       	  <section class="feature-fact"> 
       	    <h2>Там есть<br>
       	    мост дьявола</h2>
@@ -128,7 +128,7 @@
       			<button>Поиск гостиницы в Седоне</button>
       		</div>
       		<div class="popup-content">
-            <form action="" method="">
+            <form action="" method="get">
       		    <div class="popup-choice">
                 <label for="date-from">Дата заезда:</label>
       			    <div class="data">
@@ -149,16 +149,16 @@
       		      <div class="guests-adults">
       		    	  <label for="adults">Взрослые:</label>
       		    	  <div class="number">
-      		    	    <button class="number-decrease">-</button>      		    	  
-      		    	    <input type="number" id="adults" name="adults" value="2" min="1">
+      		    	    <button class="number-decrease">&ndash;</button>      	  
+      		    	    <input type="text" id="adults" name="adults" value="2">
       		    	    <button class="number-increase">+</button>
       		    	  </div>
       		      </div>
       		      <div class="guests-children">
       		    	  <label for="children">Дети:</label>
       		    	  <div class="number">
-      		    	    <button class="number-decrease">-</button>      		    	  
-      		    	    <input type="number" id="children" name="children" value="0" min="0">
+      		    	    <button class="number-decrease">&ndash;</button>      		    	  
+      		    	    <input type="text" id="children" name="children" value="0">
       		    	    <button class="number-increase">+</button>
       		    	  </div>
       		      </div>
@@ -177,7 +177,7 @@
 
     <footer class="main-footer">
     	<section class="footer-hashtag">
-    	  <a href="#" title="#"><span>#VIZITSEDONA</span></a>
+    	  <a href="#" title="#"><span>#VISITSEDONA</span></a>
     	</section>
 
     	<section class="footer-social">

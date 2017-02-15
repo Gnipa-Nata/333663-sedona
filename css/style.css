@@ -1,5 +1,5 @@
 @font-face {
-	font-family: "PTSans", "Arial", sans-serif;
+	font-family: "PTSans";
 	src: 
 		local("PTSans"),
 		url("../fonts/ptsans.woff2") format(woff2),
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-	font-family: "PTSansbold", "Arial", sans-serif;
+	font-family: "PTSansbold";
 	src: 
 		local("PTSansbold"),
 		url("../fonts/ptsansbold.woff2") format(woff2),
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
@@ -210,22 +210,22 @@ a {
 .tip-item {
 	width: 75px;
 	height: 70px;
-	background-image: url("../img/home.png");
+	background-image: url("../img/sprite.png");
 	margin: 0 auto;
 }
 
 .home {
-	background-image: url("../img/home.png");
+	background-position: -5px -274px;
 }
 
 .food {
-	background-image: url("../img/food.png");
+	background-position: -5px -194px;
 }
 
 .souvenirs {
 	width: 65px;
 	height: 75px;
-	background-image: url("../img/souvenirs.png");
+	background-position: -5px -503px;
 }
 
 .features {
@@ -321,7 +321,7 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	font-family: inherit;
+	font-family: "PT Sans", "Arial", sans-serif;
 	color: #ffffff;
 	text-transform: inherit;
 }
@@ -381,7 +381,7 @@ a {
 	box-sizing: border-box;
 	font-size: 14px;
 	line-height: 26px;
-	font-family: inherit;
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
 	cursor: pointer;
@@ -391,8 +391,7 @@ a {
 	background-color: #ebebeb;
 }
 
-.data input:active {
-	outline: none;
+.data input:focus {
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 }
@@ -431,8 +430,8 @@ a {
 	border: 0;
 	font-size: 14px;
 	font-weight: bold;
-	font-family: inherit;
-	text-transform: inherit; 
+	font-family: "PT Sans", "Arial", sans-serif;
+	text-transform: uppercase; 
 	text-align: center;
 	padding: 0;
 	cursor: pointer;
@@ -468,7 +467,7 @@ a {
 	background-color: #81b3d2;
 	font-size: 21px;
 	line-height: 26px;
-	font-family: inherit;
+	font-family: "PT Sans", "Arial", sans-serif;
 	color: #ffffff;
 	text-transform: inherit;
 	font-weight: bold; 
@@ -520,6 +519,11 @@ a {
 	background-color: #5496bd;
 }
 
+.social-btn:active::before {
+	background-color: #5496bd;
+	opacity: 0.3;
+}
+
 .social-btn::before {
 	content: "";
 	position: absolute;
@@ -533,7 +537,7 @@ a {
 .social-btn-tw::before {
 	width: 17px;
     height: 15px;
-	background-position: -5px -368px;
+	background-position: -5px -616px;
 }
 
 .social-btn-fb::before {
@@ -545,7 +549,7 @@ a {
 .social-btn-yt::before {
 	width: 20px;
     height: 16px;
-	background-position: -5px -393px;
+	background-position: -5px -641px;
 }
 
 .footer-copyright {
@@ -564,18 +568,15 @@ a {
 	width: 115px;
 	height: 40px;
 	margin-left: 8px;
-	background: url("../img/sprite.png") no-repeat;
-	background-position: -5px -194px;
+	background: -5px -454px url("../img/sprite.png") no-repeat;
 }
 
 .copyright-logo:hover {
-	background: url("../img/sprite.png") no-repeat;
-	background-position: -5px -292px;
+	background: -5px -405px url("../img/sprite.png") no-repeat;
 }
 
 .copyright-logo:active {
-	background: url("../img/sprite.png") no-repeat;
-	background-position: -5px -243px;
+	background: -5px -356px url("../img/sprite.png") no-repeat;
 }
 
 .inner {
@@ -678,13 +679,14 @@ a {
 .filter-price .price-min,
 .filter-price .price-max {
 	display: flex;
+	align-items: center;
 	width: 100%;
 }
 
 .filter-price span,
 .filter-price input {
 	display: inline-block;
-	vertical-align: center;
+	vertical-align: middle;
 	width: 50%;
 }
 
@@ -1004,7 +1006,7 @@ a {
 	width: 18px;
 	height: 17px;
 	background-image: url("../img/sprite.png");
-	background-position: -5px -341px;
+	background-position: -5px -589px;
 }
 
 .rating-star-wrapper span {

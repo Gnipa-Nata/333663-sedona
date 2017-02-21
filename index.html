@@ -11,10 +11,10 @@
     <header class="main-header clearfix"> <!-- Начало шапки сайта -->
       <nav class="main-nav">
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="media.html">Фото и Видео</a></li>
           <li><a href="booking.html">Гостиницы</a></li>
-          <li><a href="#">Карта штата</a></li>
+          <li><a href="map.html">Карта штата</a></li>
         </ul>
       </nav>
       <section class="logo">
@@ -181,16 +181,27 @@
     	</section>
 
     	<section class="footer-social">
-    	  <a class="social-btn social-btn-tw" href="#">Twitter</a>
-        <a class="social-btn social-btn-fb" href="#">Facebook</a>
-        <a class="social-btn social-btn-yt" href="#">YouTube</a>
-    	</section>
+        <a class="social-btn social-btn-tw" href="https://twitter.com/visitsedona_ru"></a>
+        <a class="social-btn social-btn-fb" href="https://www.facebook.com/visitsedona"></a>
+        <a class="social-btn social-btn-yt" href="https://www.youtube.com/channel/visitsedona"></a>
+      </section>
 
     	<section class="footer-copyright">
     	  <p>Website by</p>
-    	  <a class="copyright-logo" href="#" title="Сайт разработчика"></a>
+    	  <a class="copyright-logo" href="https://htmlacademy.ru/" title="Сайт разработчика"></a>
     	</section>
     </footer>
     </div> <!-- Конец блока всего контента -->
+
+    <script type="text/javascript">
+      var popup = document.querySelector(".popup-btn button");
+      var content = document.querySelector(".popup-content");
+
+      popup.addEventListener("click", function(event){
+          event.preventDefault();
+      content.classList.toggle("content-close");
+        });
+
+    </script>
   </body>
 </html>

@@ -302,13 +302,11 @@ a {
 .popup {
 	width: 570px;
 	height: 480px;
-	background-color: #ffffff;
 	position: absolute;
 	left: 50%;
 	margin-left: -285px;
 	top: 205px;
 	z-index: 1;
-	box-shadow: 0 0 7px -2px;
 }
 
 .popup-btn button {
@@ -324,11 +322,41 @@ a {
 	font-family: "PT Sans", "Arial", sans-serif;
 	color: #ffffff;
 	text-transform: inherit;
+	cursor: pointer;
 }
 
-.popup-content {
-	padding: 54px 55px; 
+@keyframes close {
+	100% {
+		transform: translateY(-100%);
+	}
 }
+
+/*@keyframes up {
+	0% {
+		transform: translateY(-3000px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}*/
+
+.popup-content {
+	padding: 54px 55px;
+	background-color: #ffffff; 
+	box-shadow: 0 0 7px -2px;
+}
+
+.content-close {
+	overflow: hidden;
+	animation-name: close;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+}
+
+/*.content-show {
+	animation-name: up;
+	animation-duration: 5s;
+}*/
 
 .popup-content label {
 	font-size: 14px;

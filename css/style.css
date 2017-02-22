@@ -298,6 +298,7 @@ a {
 	width: 100%;
 	height: 595px;
 	font-size: 0;
+	background: url("../img/map.jpg") no-repeat;
 }
 
 .popup {
@@ -326,7 +327,6 @@ a {
 	color: #ffffff;
 	text-transform: inherit;
 	cursor: pointer;
-	
 }
 
 .popup-content {
@@ -503,7 +503,9 @@ a {
 }
 
 .footer-specific {
-	background: rgba(255, 255, 255, 0.5);
+	width: 100%;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.85);
 	position: absolute;
 	bottom: 0;
 	z-index: 15;

@@ -782,14 +782,6 @@ a {
 	left: 80%;
 }
 
-.filter-result {
-	display: block;
-	width: 133px;
-	height: 32px;
-	margin: 0 auto;
-	margin-top: 32px;
-}
-
 .filter-rang button {
 	display: block;
 	width: 133px;
@@ -802,6 +794,8 @@ a {
 	color: #ffffff;
 	font-weight: normal;
 	text-transform: inherit;
+	margin: 0 auto;
+	margin-top: 32px;
 	cursor: pointer;
 }
 

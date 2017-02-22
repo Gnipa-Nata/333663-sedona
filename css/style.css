@@ -297,6 +297,7 @@ a {
 	width: 100%;
 	height: 475px;
 	font-size: 0;
+
 }
 
 .popup {
@@ -306,10 +307,12 @@ a {
 	left: 50%;
 	margin-left: -285px;
 	top: 205px;
-	z-index: 1;
+	overflow: hidden;
 }
 
 .popup-btn button {
+	position: relative;
+	z-index: 2;
 	width: 100%;
 	background-color: #766357;
 	border: none;
@@ -323,40 +326,20 @@ a {
 	color: #ffffff;
 	text-transform: inherit;
 	cursor: pointer;
+	
 }
-
-@keyframes close {
-	100% {
-		transform: translateY(-100%);
-	}
-}
-
-/*@keyframes up {
-	0% {
-		transform: translateY(-3000px);
-	}
-	100% {
-		transform: translateY(0px);
-	}
-}*/
 
 .popup-content {
 	padding: 54px 55px;
 	background-color: #ffffff; 
 	box-shadow: 0 0 7px -2px;
+	transition: 3s;
 }
 
 .content-close {
-	overflow: hidden;
-	animation-name: close;
-	animation-duration: 5s;
-	animation-fill-mode: both;
+	transform: translateY(-100%);
 }
 
-/*.content-show {
-	animation-name: up;
-	animation-duration: 5s;
-}*/
 
 .popup-content label {
 	font-size: 14px;
@@ -666,13 +649,35 @@ a {
 }
 
 .filter label>input[type="checkbox"]:checked + span::before {
+	/*content: "";
+    display: inline-block;
+    vertical-align: top;
+	width: 22px;
+	height: 22px;*/
+	background-image: url("../img/sprite.png");
+	background-position: -5px -101px;
+	background-repeat: no-repeat;
+}
+
+.filter label>input[type="checkbox"]:disabled + span::before {
+	/*content: "";
+    display: inline-block;
+    vertical-align: top;
+	width: 22px;
+	height: 22px;*/
+	background-image: url("../img/disabled.png");
+	/*background-position: -5px -101px;*/
+	background-repeat: no-repeat;
+}
+
+.filter label>input[type="checkbox"]:checked:disabled + span::before {
 	content: "";
     display: inline-block;
     vertical-align: top;
 	width: 22px;
 	height: 22px;
-	background-image: url("../img/sprite.png");
-	background-position: -5px -101px;
+	background-image: url("../img/disabled-check.png");
+	/*background-position: -5px -101px;*/
 	background-repeat: no-repeat;
 }
 
